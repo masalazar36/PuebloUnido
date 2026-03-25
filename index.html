@@ -123,7 +123,7 @@
     .precio-section h2 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--blanco); line-height: 1.1; margin-bottom: 1rem; }
     .precio-grande { font-family: 'Playfair Display', serif; font-size: clamp(4rem, 10vw, 8rem); font-weight: 900; color: var(--tierra); line-height: 0.9; display: block; margin: 1.5rem 0; }
     .precio-section p { color: rgba(255,255,255,0.7); font-size: 1rem; margin-bottom: 2.5rem; }
-    .cta-buttons { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; }
+    .cta-buttons { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; position: relative; z-index: 10; }
     .btn-whatsapp { background: #25D366; color: var(--blanco); padding: 1rem 2.5rem; border-radius: 100px; text-decoration: none; font-size: 1rem; font-weight: 600; display: flex; align-items: center; gap: 0.6rem; transition: transform 0.2s, opacity 0.2s; }
     .btn-whatsapp:hover { transform: translateY(-3px); opacity: 0.92; }
     .btn-llamar { background: transparent; color: var(--blanco); border: 2px solid rgba(255,255,255,0.4); padding: 1rem 2.5rem; border-radius: 100px; text-decoration: none; font-size: 1rem; font-weight: 500; display: flex; align-items: center; gap: 0.6rem; transition: transform 0.2s, background 0.2s; }
@@ -224,7 +224,6 @@
   <div class="cards-grid">
     <div class="card reveal"><div class="card-icon">📐</div><h3>Dimensiones ideales</h3><p>10 metros de frente por 33.1 metros de fondo, dando 331 m² totales. Perfecta proporción para cualquier tipo de construcción residencial.</p></div>
     <div class="card reveal"><div class="card-icon">🏗️</div><h3>Listo para construir</h3><p>Terreno en zona consolidada con acceso a servicios básicos. Ideal para casa propia, dúplex o proyecto de inversión.</p></div>
-   
     <div class="card reveal"><div class="card-icon">📍</div><h3>Ubicación estratégica</h3><p>Barrio Pueblo Unido, al sur de Quito. Zona residencial tranquila con mercados, escuelas y comercios muy cerca.</p></div>
     <div class="card reveal"><div class="card-icon">💰</div><h3>Precio competitivo</h3><p>$26.000 negociables por todo el terreno. Excelente precio por metro cuadrado para la zona sur de Quito.</p></div>
     <div class="card reveal"><div class="card-icon">📄</div><h3>Documentos en regla</h3><p>Terreno con escrituras y documentación legal completa. Proceso de compra transparente y seguro para el comprador.</p></div>
@@ -242,7 +241,6 @@
     <p>El terreno está en el barrio Pueblo Unido, zona residencial consolidada del sur de Quito, con excelente conectividad y servicios completos.</p>
     <ul class="puntos">
       <li>A minutos de la Av. Mariscal Sucre</li>
-      
       <li>Mercados y comercios a poca distancia</li>
       <li>Centros educativos y de salud cercanos</li>
       <li>Servicios básicos completos: agua, luz, alcantarillado</li>
@@ -254,16 +252,18 @@
 <section class="galeria" id="galeria">
   <div class="section-header reveal">
     <span class="section-eyebrow">El espacio</span>
-    
+  </div>
+</section>
 
 <section class="precio-section" id="contacto">
   <p class="eyebrow">Precio de venta</p>
   <h2>Hazlo tuyo hoy</h2>
   <span class="precio-grande">$26.000</span>
   <p>Precio negociable · Documentos en regla · Atención inmediata</p>
+  
   <div class="cta-buttons">
-    <a href="https://wa.me/593987509703?text=Hola,%20vi%20el%20anuncio%20del%20terreno%20en%20Pueblo%20Unido.%20¿Me%20puede%20dar%20más%20información?" target="_blank" class="btn-whatsapp">💬 WhatsApp: 098 750 9703</a>
-    <a href="https://wa.me/593968772175?text=Hola,%20vi%20el%20anuncio%20del%20terreno%20en%20Pueblo%20Unido.%20¿Me%20puede%20dar%20más%20información?" target="_blank" class="btn-whatsapp" style="background:#128C7E;">💬 WhatsApp: 096 877 2175</a>
+    <a href="https://wa.me/593987509703?text=Hola,%20me%20interesa%20el%20terreno%20en%20Pueblo%20Unido" target="_blank" class="btn-whatsapp">💬 WhatsApp: 098 750 9703</a>
+    <a href="https://wa.me/593968772175?text=Hola,%20me%20interesa%20el%20terreno%20en%20Pueblo%20Unido" target="_blank" class="btn-whatsapp" style="background:#128C7E;">💬 WhatsApp: 096 877 2175</a>
     <a href="tel:+593987509703" class="btn-llamar">📞 Llamar: 098 750 9703</a>
   </div>
 </section>
